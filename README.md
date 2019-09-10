@@ -3,7 +3,7 @@ A python script that uses Watson Assistant API and Google Speech Recognition.
 
 **Notes**
   - Under development.
-  - Errors may come up
+  - Errors may arise.
 
 **Usage**
   - You'll need a Watson Assistant account.
