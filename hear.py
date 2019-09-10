@@ -14,7 +14,7 @@ def hear():
   #Passa o audio para o reconhecedor de padroes do speech_recognition
       frase = microfone.recognize_google(audio,language='pt-BR')
       #Após alguns segundos, retorna a frase falada
-      # print("Você disse: " + frase)#Caso nao tenha reconhecido o padrao de fala, exibe esta mensagem
-  except sr.UnkownValueError:
-      print("Não entendi")
+      print("Você disse: " + frase)#Caso nao tenha reconhecido o padrao de fala, exibe esta mensagem
+  except Exception as e:
+      print(e)
   return frase
