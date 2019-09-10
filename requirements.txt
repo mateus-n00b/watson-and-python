@@ -1,0 +1,5 @@
+ibm-watson
+SpeechRecognition
+pyaudio
+gTTS
+playsound
