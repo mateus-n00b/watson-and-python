@@ -10,7 +10,7 @@ def login():
         )
 
         session = assistant.create_session(ASSISTANT_ID).get_result()
-        return session
+        return (session,assistant)
     except Exception as e:
         print(e)
         exit(-1)
@@ -18,7 +18,7 @@ def login():
 # print(json.dumps(session,indent=2))
 
 def send_msg(text):
-    session = login()
+    session,assistant = login()
     SESSION_ID = session['session_id']
     message = assistant.message(
         ASSISTANT_ID,
