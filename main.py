@@ -6,6 +6,7 @@ import hear, speak
 import watson
 import json
 
+text = ""
 while text != "Parar Programa":
     text = hear.hear()
     response = watson.send_msg(text)
