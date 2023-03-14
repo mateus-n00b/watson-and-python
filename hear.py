@@ -7,14 +7,16 @@ def hear():
   #Chama a funcao de reducao de ruido disponivel na speech_recognition
   microfone.adjust_for_ambient_noise(source)
   #Avisa ao usuario que esta pronto para ouvir
-  print("Pode falar: ")
+  print("Speak: ")
   #Armazena a informacao de audio na variavel
   audio = microfone.listen(source)
+  frase = ""
   try:
   #Passa o audio para o reconhecedor de padroes do speech_recognition
-      frase = microfone.recognize_google(audio,language='pt-BR')
+      frase = microfone.recognize_google(audio,language='en-US')
       #Após alguns segundos, retorna a frase falada
       print("Você disse: " + frase)#Caso nao tenha reconhecido o padrao de fala, exibe esta mensagem
   except Exception as e:
       print(e)
   return frase
+

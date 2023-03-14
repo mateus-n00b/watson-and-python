@@ -1,4 +1,4 @@
-ibm-watson
+openai
 SpeechRecognition
 pyaudio
 gTTS

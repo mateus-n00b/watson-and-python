@@ -5,7 +5,7 @@ def speak(text):
  audio_file = 'audios/audio.mp3'
  error_file = "audios/error.mp3"
  try:
-     tts = gTTS(text,lang='pt-br')
+     tts = gTTS(text,lang='en-us')
      #Salva o arquivo de audio
      tts.save(audio_file)
      print("Processando...")
